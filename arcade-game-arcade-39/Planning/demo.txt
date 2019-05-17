@@ -1,0 +1,52 @@
+UML source code for demo
+
+This is the plantuml code for a sample design for a small problem.  
+
+Use http://www.plantuml.com/plantuml to create an initial design for your
+arcade game project.
+
+1. Create a .txt file or a .md file for your design and store it in the uml folder.
+2. Copy and paste the plantuml code that you entered in the website to generate your
+   design in that file.
+3. There is a .png file of the sample design in the uml folder.
+4. Generate a similar .png file from the http://www.plantuml.com/plantuml site 
+   for your arcade game design and save it in the uml folder.
+5. Be sure to commit and push your changes to your project repo.
+
+http://plantuml.com/class-diagram has a nice list of arrows and other components
+you can use in your design.
+
+
+plantuml code for simple design below this line
+---------------------------------------
+@startuml
+skinparam style strictuml
+
+interface C {
+    calculate()
+}
+
+class A {
+    name
+}
+
+class B {
+    val
+    getVal()	
+}
+
+
+
+class D {
+    calculate( B b)
+    calculate()
+}
+
+A  -|> B
+D ..|> C
+D -> A
+A -> "*" C
+D ..> B
+@enduml
+---------------------------------------
+plantuml code for simple design above this line
