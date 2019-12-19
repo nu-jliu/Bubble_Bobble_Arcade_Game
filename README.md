@@ -1,2 +1,2 @@
-# Bubble-Bobble
-The repository for bubble bobble game projecy
+# Bubble_Bobble
+The repository for bubble bobble arcade game projecy
